@@ -11,30 +11,55 @@
         <div class="container-padding"></div>
         <div id="left-side">
             <div id="background-img">
-                <div id="photo-credit">
-                    <p>Photo by <a href="https://unsplash.com/@ilon_a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lena Polishko</a> on <a href="https://unsplash.com/photos/K9JFh4oyvBY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                <div>
+                    <p id="photo-credit">Photo by <a href="https://unsplash.com/@ilon_a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lena Polishko</a> on <a href="https://unsplash.com/photos/K9JFh4oyvBY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </div>
             </div>
         </div>
         <div id="right-side">
             <div id="hero-header">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div id="signup-form">
                 <h2>Let's do this!</h2>
-                <ul>
-                    <li>First name</li>
-                    <li>Last name</li>
-                    <li>Email</li>
-                    <li>Phone number</li>
-                    <li>Password</li>
-                    <li>Confirm password</li>
-                </ul>
+                <form action="example.com/path" method="post">
+                    <div id="form-container">
+                        <div id="form-left">
+                            <div class="form-field">
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-field">
+                                <label for="user-password">Password</label>
+                                <input type="password" id="user-password" name="password">
+                            </div>
+                        </div>
+                        <div id="form-right">
+                            <div class="form-field">
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                            <div class="form-field">
+                                <label for="phone-number">Phone number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-field">
+                                <label for="confirm-password">Confirm password</label>
+                                <input type="password" id="confirm-password" name="confirm-password">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
             </div>
             <div id="account">
-                <button>Create account</button>
-                <p>Already have an account? Log in</p>
+                <button type="submit">Create account</button>
+                <p>Already have an account? <a href="#top" id="login">Log in</a></p>
             </div>
         </div>
         <div class="container-padding"></div>
